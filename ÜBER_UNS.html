@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ÜBER UNS</title>
+	<style>
+		
+		.top-bar {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			word-spacing: 3px;
+			width: 144%;
+		}
+		.topnav {
+			display: none; 
+		}
+		.menu-icon {
+			display: block;
+			cursor: pointer;
+		}
+		.menu-icon::before {
+			content: "\2630"; 
+			font-size: 20px;
+		}
+		.menu-icon.active ~ .topnav {
+			display: block; 
+		}
+		.topnav a {
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+			padding: 10px;
+			font-size: 20px;
+		}
+	
+		body {
+			background-color: #9DB2BF;
+		}
+		
+	</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuIcon = document.querySelector('.menu-icon');
+        
+        menuIcon.addEventListener('click', function() {
+            menuIcon.classList.toggle('active');
+        });
+    });
+</script>
+
+
+</head>
+
+<body>
+  
+
+	<div class="top-bar">
+		<h1><font face="Courier New">Über uns</font></h1>
+		<div class="menu-icon"></div>
+		<div class="topnav">
+			<a class="active" href="./Index.html">HOME</a>
+            <a class="active" href="./Südkorea.html">SÜDKOREA</a>
+            <a class="active" href="./Schweden.html">SCHWEDEN</a>
+			<a class="active" href="./Kontakt.html">KONTAKT</a>
+	
+        </div>
+		</div>
+
+		<p>Ich bin Leon, 22 Jahre alt und studiere Wirtschaftswissenschaften mit dem Studienschwerpunkt Betriebswirtschaftslehre. Tendenziell treibe ich viel Sport und liebe die Natur. Insbesondere Leichtathletik, Schwimmen und Volleyball gehören zu meinen Lieblingssportarten. Generell bin ich ein weltoffener und kommunikationsfreudiger Student, der in einem Auslandsemester, dass alltägliche Leben in einem neuen Land, eine neue Kultur sowie weitere soziale Kompetenzen erlernen wollte. Zudem war es eine exzellente Vorbereitung auf den Master, der eine internationale Auslegung haben soll. Man sammelt im Auslandssemester nicht nur wertvolle Lebenserfahrungen, sondern lernt viele neue Menschen kennen, sodass du danach zumindest europaweit sehr connected bist. Dies sind die Beweggründe gewesen, mein 5. Semester in Schweden anstatt in Jena zu verbringen.
+		</p>
+
+
+
+</body>
+</html>
